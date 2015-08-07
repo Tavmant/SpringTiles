@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+	<definition name="base" template="/views/tiles/layout.jsp">
+		<put-attribute name="header" value="/views/tiles/header.jsp"></put-attribute>
+		<put-attribute name="body" value=""></put-attribute>
+		<put-attribute name="footer" value="/views/tiles/footer.jsp"></put-attribute>
+	</definition>
+
+ 	<definition name="authors" extends="base">
+		<put-attribute name="body" value="/views/author-all.jsp"></put-attribute>
+ 		<put-attribute name="title" value="Authors"></put-attribute>
+ 	</definition>
+
+ 	<definition name="newAuthor" extends="base">
+ 		<put-attribute name="body" value="/views/author-new.jsp"></put-attribute>
+ 		<put-attribute name="footer" value=""></put-attribute>
+		<put-attribute name="title" value="New Author Page"></put-attribute>
+ 	</definition>
+ 	
+ 	<definition name="removeAuthor" extends="base">
+ 		<put-attribute name="body" value="/views/author-remove.jsp"></put-attribute>
+ 		<put-attribute name="footer" value=""></put-attribute>
+		<put-attribute name="title" value="Removing Author Page"></put-attribute>
+ 	</definition>
+ 	
+ 	<definition name="profile" extends="base">
+ 		<put-attribute name="body" value="/views/author-profile.jsp"></put-attribute>
+		<put-attribute name="title" value="Author Profile"></put-attribute>
+ 	</definition>
+
+ 	<definition name="newBook" extends="base">
+ 		<put-attribute name="body" value="/views/book-new.jsp"></put-attribute>
+ 		<put-attribute name="footer" value=""></put-attribute>
+		<put-attribute name="title" value="New Book Page"></put-attribute>
+ 	</definition>
+ 	
+ 	<definition name="removeBook" extends="base">
+ 		<put-attribute name="body" value="/views/book-remove.jsp"></put-attribute>
+ 		<put-attribute name="footer" value=""></put-attribute>
+		<put-attribute name="title" value="Removing Book Page"></put-attribute>
+ 	</definition>
+ 	
+ 	<definition name="badParam" extends="base">
+ 		<put-attribute name="header" value=""></put-attribute>
+		<put-attribute name="body" value="/views/badParam.jsp"></put-attribute>
+ 		<put-attribute name="title" value="Bad Parameters"></put-attribute>
+ 	</definition>
+
+ 	<definition name="home-page" extends="base">
+ 		<put-attribute name="body" value="/views/home-page.jsp"></put-attribute>
+		<put-attribute name="footer" value=""></put-attribute>
+		<put-attribute name="title" value="Home Page"></put-attribute>
+ 	</definition>
+</tiles-definitions>
